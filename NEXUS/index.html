@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Gaming | Ultimate Gaming Rigs</title>
+  <meta name="description" content="Nexus Gaming - Custom high-performance gaming PCs built for gamers who demand the best">
+  <meta name="keywords" content="gaming pc, custom pc, gaming rig, high performance pc">
+  <meta name="author" content="Nexus Gaming">
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:title" content="Nexus Gaming | Ultimate Gaming Rigs">
+  <meta property="og:image" content="assets/images/logos/logoo.png">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="preload" href="assets/images/pcs/quantum x.webp" as="image">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body class="home-page">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Glowing Background Elements -->
+  <div class="glow-circle-1"></div>
+  <div class="glow-circle-2"></div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logos/logoo.png" alt="Nexus Gaming Logo" class="top-logo" loading="lazy">
+      </a>
+      <nav class="neon-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="products.html">RIGS</a></li>
+          <li><a href="games.html">GAMES</a></li>
+          <li>
+            <a href="cart.html" class="cart-link">
+              CART <span class="cart-counter">0</span>
+            </a>
+          </li>
+          <li><a href="contact.html" class="contact-btn">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="glitch" data-text="BUILD. PLAY. DOMINATE.">BUILD. PLAY. DOMINATE.</h1>
+        <p class="subtitle">Custom gaming PCs engineered for victory</p>
+        <a href="products.html" class="cta-button pulse">SHOP NOW</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/pcs/quantum x.webp" alt="Quantum X Gaming PC" class="floating" loading="lazy" decoding="async">
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <h2 class="section-title"><span>FEATURED</span> SYSTEMS</h2>
+      <div class="pcs-grid grid">
+        <!-- Featured PC 1 -->
+        <div class="pc-card" data-product-id="yeyian-yari-x13">
+          <div class="pc-badge">BEST SELLER</div>
+          <img src="assets/images/pcs/yey x13.jpg" alt="YEYIAN Yari X13 Gaming PC" class="card-img pc-img" loading="lazy">
+          <div class="pc-info">
+            <h3>YEYIAN Yari X13</h3>
+            <div class="pc-specs">
+              <p><i class="fas fa-microchip"></i> Intel Core i9-14900KF</p>
+              <p><i class="fas fa-gamepad"></i> RTX 3070</p>
+              <p><i class="fas fa-memory"></i> 11TB SSD</p>
+            </div>
+            <div class="price">R84,999.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Featured PC 2 -->
+        <div class="pc-card" data-product-id="cyberpower-pc">
+          <div class="pc-badge">NEW</div>
+          <img src="assets/images/pcs/cyberP.png" alt="CyberPower Gaming PC" class="card-img pc-img" loading="lazy">
+          <div class="pc-info">
+            <h3>CyberPower</h3>
+            <div class="pc-specs">
+              <p><i class="fas fa-microchip"></i> AMD Ryzen 7</p>
+              <p><i class="fas fa-gamepad"></i> RTX 5060 Ti</p>
+              <p><i class="fas fa-memory"></i> 1TB SSD</p>
+            </div>
+            <div class="price">R80,999.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Featured PC 3 -->
+        <div class="pc-card" data-product-id="rog-ally-x">
+          <div class="pc-badge">EDITOR'S PICK</div>
+          <img src="assets/images/pcs/ROG.png" alt="ROG ALLY X Handheld" class="card-img pc-img" loading="lazy">
+          <div class="pc-info">
+            <h3>ROG ALLY X</h3>
+            <div class="pc-specs">
+              <p><i class="fas fa-microchip"></i> AMD RYZEN Z1 EXTREME</p>
+              <p><i class="fas fa-gamepad"></i> AMD Radeon</p>
+              <p><i class="fas fa-memory"></i> 1TB M2 SSD</p>
+            </div>
+            <div class="price">R17,999.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="neon-footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="#" class="social-icon discord" aria-label="Discord" title="Join our Discord"></a>
+        <a href="#" class="social-icon twitch" aria-label="Twitch" title="Follow us on Twitch"></a>
+        <a href="#" class="social-icon youtube" aria-label="YouTube" title="Subscribe on YouTube"></a>
+      </div>
+      <p>&copy; <span id="year"></span> NEXUS Gaming. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Add event listeners for featured PCs
+    document.querySelectorAll('.pc-card .add-to-cart').forEach(button => {
+      button.addEventListener('click', function() {
+        const card = this.closest('.pc-card');
+        const product = {
+          name: card.querySelector('h3').textContent,
+          price: card.querySelector('.price').textContent,
+          image: card.querySelector('img').src,
+          id: card.dataset.productId
+        };
+        addToCart(product.name, product.price, product.image, product.id);
+      });
+    });
+
+    // Navigation effects
+    const currentPage = location.pathname.split('/').pop();
+    document.querySelectorAll('.navbar a').forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+      
+      link.addEventListener('mouseenter', () => {
+        link.style.transform = 'translateY(-3px)';
+      });
+      
+      link.addEventListener('mouseleave', () => {
+        link.style.transform = 'translateY(0)';
+      });
+    });
+  </script>
+</body>
+</html>

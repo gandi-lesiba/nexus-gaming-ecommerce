@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gaming PCs | Nexus Gaming</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="neon-header">
+    <div class="container">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="assets/images/logos/logoo.png" alt="Nexus Logo" class="top-logo" />
+        </a>
+      </div>
+      <div class="cart-icon-container">
+        <a href="cart.html" class="cart-link">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-counter">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pcs-hero">
+      <h1 class="glitch" data-text="TOP GAMING PCS">TOP GAMING PCS</h1>
+      <p>June 2025's most powerful rigs</p>
+    </section>
+
+    <div class="pcs-grid">
+      <!-- PC 1 -->
+      <div class="pc-card" data-product-id="dell-xps-2025">
+        <div class="pc-badge">BEST SELLER</div>
+        <img src="assets/images/pcs/del xps.webp" alt="Dell XPS Desktop">
+        <div class="pc-info">
+          <h3>Dell XPS Desktop (2025)</h3>
+          <div class="pc-specs">
+            <p><i class="fas fa-microchip"></i> Intel Core i9-14900KF</p>
+            <p><i class="fas fa-gamepad"></i> NVIDIA RTX 4090</p>
+            <p><i class="fas fa-memory"></i> 32GB DDR5 RAM</p>
+          </div>
+          <div class="price">R44,999.99</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- PC 2 -->
+      <div class="pc-card" data-product-id="mac-pro-m2-ultra">
+        <img src="assets/images/pcs/Mac.png" alt="Mac Pro M2 Ultra">
+        <div class="pc-info">
+          <h3>Apple Mac Pro M2 Ultra Pro</h3>
+          <div class="pc-specs">
+            <p><i class="fas fa-microchip"></i> Apple M4 Pro (24-core)</p>
+            <p><i class="fas fa-gamepad"></i> 60-core GPU</p>
+            <p><i class="fas fa-memory"></i> 1TB M2 SSD</p>
+          </div>
+          <div class="price">R290,999.99</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- PC 3 -->
+      <div class="pc-card" data-product-id="alienware-area-51">
+        <img src="assets/images/pcs/alien.png" alt="Alienware">
+        <div class="pc-info">
+          <h3>Alienware Area-51</h3>
+          <div class="pc-specs">
+            <p><i class="fas fa-microchip"></i> Ultra 7265 (20-core)</p>
+            <p><i class="fas fa-gamepad"></i> NVIDIA RTX3090</p>
+            <p><i class="fas fa-memory"></i> 64GB DDR5</p>
+          </div>
+          <div class="price">R63,999.99</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- PC 4 -->
+      <div class="pc-card" data-product-id="quantum-x">
+        <img src="assets/images/pcs/featured desktop.webp" alt="Quantum X">
+        <div class="pc-info">
+          <h3>Quantum X</h3>
+          <div class="pc-specs">
+            <p><i class="fas fa-microchip"></i> i9 (13th gen)</p>
+            <p><i class="fas fa-gamepad"></i> NVIDIA RTX4090</p>
+            <p><i class="fas fa-memory"></i> 64 GB DDR5</p>
+          </div>
+          <div class="price">R69,499.99</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- PC 5 -->
+      <div class="pc-card" data-product-id="lenovo-thinkstation">
+        <img src="assets/images/pcs/think.png" alt="Lenovo ThinkStation">
+        <div class="pc-info">
+          <h3>Lenovo ThinkStation</h3>
+          <div class="pc-specs">
+            <p><i class="fas fa-microchip"></i> AMD Ryzen Threadripper PRO 7945W (96 cores)</p>
+            <p><i class="fas fa-gamepad"></i> NVIDIA RTX A1000</p>
+            <p><i class="fas fa-memory"></i> 64 GB DDR5</p>
+          </div>
+          <div class="price">R86,999.99</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- PC 6 -->
+      <div class="pc-card" data-product-id="asus-rog-ally-x">
+        <div class="pc-badge">EDITOR'S PICK</div>
+        <img src="assets/images/pcs/RogAllyX.png" alt="Rog Ally X">
+        <div class="pc-info">
+          <h3>Asus ROG ALLY X</h3>
+          <div class="pc-specs">
+            <p><i class="fas fa-microchip"></i> AMD RYZEN Z1 EXTREME</p>
+            <p><i class="fas fa-gamepad"></i> AMD Radeon</p>
+            <p><i class="fas fa-memory"></i> 1TB M2 SSD</p>
+          </div>
+          <div class="price">R17,999.99</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="neon-footer">
+    <div class="footer-content">
+      <p>&copy; <span id="current-year"></span> Nexus Gaming. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Add event listeners for PC cards
+    document.querySelectorAll('.pc-card .add-to-cart').forEach(button => {
+      button.addEventListener('click', function() {
+        const card = this.closest('.pc-card');
+        const product = {
+          name: card.querySelector('h3').textContent,
+          price: card.querySelector('.price').textContent,
+          image: card.querySelector('img').src,
+          id: card.dataset.productId
+        };
+        addToCart(product.name, product.price, product.image, product.id);
+      });
+    });
+  </script>
+</body>
+</html>

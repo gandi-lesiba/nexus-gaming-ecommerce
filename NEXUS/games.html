@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 PC Games | Nexus Gaming</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header class="neon-header">
+  <div class="container">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="assets/images/logos/logoo.png" alt="Nexus Logo" class="top-logo" />
+      </a>
+    </div>
+    <div class="cart-icon-container">
+      <a href="cart.html" class="cart-link">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-counter">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+    <section class="games-hero">
+        <h1 class="glitch" data-text="TOP 10 PC GAMES">TOP 10 PC GAMES</h1>
+        <p>June 2025's hottest releases</p>
+    </section>
+
+    <div class="games-grid">
+        <!-- Game 1 -->
+        <div class="game-card">
+            <div class="game-badge">HOT</div>
+            <img src="assets/images/games/dune-awake.png" alt="Dune Awakening">
+            <div class="game-info">
+                <h3>Dune: Awakening</h3>
+                <div class="game-meta">
+                    <span class="genre">Survival MMO</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+                <div class="price">R1199.99</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('Dune: Awakening', 1199.99, 'assets/images/games/dune-awake.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <!-- Game 2 -->
+        <div class="game-card">
+            <img src="assets/images/games/stellar-blade.png" alt="Stellar Blade">
+            <div class="game-info">
+                <h3>Stellar Blade</h3>
+                <div class="game-meta">
+                    <span class="genre">Action RPG</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="price">R1399.99</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('Stellar Blade', 1399.99, 'assets/images/games/stellar-blade.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <!-- Game 3 -->
+        <div class="game-card">
+            <img src="assets/images/games/monsterhunt-wilds.png" alt="Monster Hunter Wilds">
+            <div class="game-info">
+                <h3>Monster Hunter Wilds</h3>
+                <div class="game-meta">
+                    <span class="genre">Sci-Fi</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="price">R1299.99</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('Monster Hunter Wilds', 1299.99, 'assets/images/games/monsterhunt-wilds.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="game-card">
+            <img src="assets/images/games/HellD2.png" alt="Helldivers 2">
+            <div class="game-info">
+                <h3>Helldivers 2</h3>
+                <div class="game-meta">
+                    <span class="genre">Action</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="price">R799.99</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('Helldivers 2', 799.99, 'assets/images/games/HellD2.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Game 5 -->
+        <div class="game-card">
+            <img src="assets/images/games/the-elders.png" alt="The Elder Scrolls IV">
+            <div class="game-info">
+                <h3>The Elder Scrolls IV</h3>
+                <div class="game-meta">
+                    <span class="genre">RPG</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="price">R699.99</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('The Elder Scrolls IV', 699.99, 'assets/images/games/the-elders.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Game 6 -->
+        <div class="game-card">
+            <img src="assets/images/games/CS2.png" alt="Counter-Strike 2">
+            <div class="game-info">
+                <h3>Counter-Strike 2</h3>
+                <div class="game-meta">
+                    <span class="genre">Action</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="price">R2199.99</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('Counter-Strike 2', 2199.99, 'assets/images/games/CS2.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Game 7 -->
+        <div class="game-card">
+            <img src="assets/images/games/F125.png" alt="F125">
+            <div class="game-info">
+                <h3>F125 Ultimate Edition</h3>
+                <div class="game-meta">
+                    <span class="genre">Racing</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+                <div class="price">R1241.68</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('F125 Ultimate Edition', 1241.68, 'assets/images/games/F125.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Game 8 -->
+        <div class="game-card">
+            <img src="assets/images/games/assasins.png" alt="Assassin's Creed Shadows">
+            <div class="game-info">
+                <h3>Assassin's Creed Shadows</h3>
+                <div class="game-meta">
+                    <span class="genre">Action</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="price">R1249.99</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('Assassin\'s Creed Shadows', 1249.99, 'assets/images/games/assasins.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <!-- Game 9 -->
+        <div class="game-card">
+            <img src="assets/images/games/doom.png" alt="Doom Eternal">
+            <div class="game-info">
+                <h3>Doom Eternal</h3>
+                <div class="game-meta">
+                    <span class="genre">Action</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="price">R450.00</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('Doom Eternal', 450.00, 'assets/images/games/doom.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Game 10 -->
+        <div class="game-card">
+            <img src="assets/images/games/cyber.png" alt="Cyberpunk 2077">
+            <div class="game-info">
+                <h3>Cyberpunk 2077</h3>
+                <div class="game-meta">
+                    <span class="genre">Action</span>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <div class="price">R519.99</div>
+                <button class="add-to-cart" 
+                        onclick="addToCart('Cyberpunk 2077', 519.99, 'assets/images/games/cyber.png')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="neon-footer">
+    <div class="footer-content">
+        <p>&copy; <span id="current-year"></span> Nexus Gaming. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+<script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

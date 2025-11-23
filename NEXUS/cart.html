@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Nexus Gaming</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header class="neon-header">
+  <div class="container">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="assets/images/logos/logoo.png" alt="Nexus Logo" class="top-logo" />
+      </a>
+    </div>
+    <div class="cart-icon-container">
+      <a href="cart.html" class="cart-link">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-counter">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+    <section class="cart-container">
+        <h1><i class="fas fa-shopping-cart"></i> YOUR CART</h1>
+        
+        <div id="cart-items" class="cart-items">
+            <div class="empty-cart-message">
+                <p>Your cart is empty</p>
+                <div class="empty-cart-actions">
+                    <a href="products.html" class="cta-button">Browse PCs</a>
+                    <a href="games.html" class="cta-button">Explore Games</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">R0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping:</span>
+                <span id="shipping">R0.00</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="total">R0.00</span>
+            </div>
+            
+            <button id="checkout-btn" class="checkout-btn pulse">PROCEED TO CHECKOUT</button>
+        </div>
+    </section>
+</main>
+
+<footer class="neon-footer">
+    <div class="footer-content">
+        <p>&copy; <span id="current-year"></span> Nexus Gaming. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+<script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
